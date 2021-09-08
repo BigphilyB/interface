@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="shortcut icon" href="#">
     <script src="https://kit.fontawesome.com/d50470e1c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,21 +15,21 @@
         <h1>LOGO</h1>
     </header>
     <nav>
-                <button id="" onClick="myFunction()"> <i class="fas fa-address-card"> </i> inloggen</button>
+                <button id="" onClick="myFunction()"> <i class="fas fa-address-card"> </i> My acount</button>
 
     </nav>
 <!-- <div id="form">     -->
     <form id="inlogMenu"action="" style="display: none;" >
-        <div>
-        <label for="Email">Email:</label> 
-        <input type="mail" id="Email" name="Email" tabindex="1" placeholder="User Email" required>
+        <div class="tooltip" data-tip="Make sure it's your full email adress.">
+            <label for="Email">Email:</label> 
+        <input type="email" id="Email" name="Email" tabindex="1" placeholder="User Email" required>
         </div> <br>
-        <div>
+        <div class="tooltip" data-tip="Make sure your password is minimal 8 letters.">
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="8" required tabindex="2" placeholder="Password">  
+        <input type="password" id="password" name="password" minlength="8"  tabindex="2" placeholder="User password" required>  
         </div><br>  
         <br>
-        <input type="submit" value="Submit">        
+        <input type="submit" value="Login">        
 
     </form>
 <!-- </div> -->

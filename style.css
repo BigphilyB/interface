@@ -40,6 +40,8 @@ nav{
 }
 form{
     margin-top: 10%;
+    margin-bottom: 10%;
+
     margin-left: auto;
     margin-right: auto;
     background-color: blue;
@@ -49,11 +51,48 @@ form{
     border: 3px solid black;
 }
 input{
+    width:100%;
     float:right;
   }
 
-
-
+div.tooltip {
+    position: flex;
+    
+    /* positioning on the page */
+    color: #eee;
+    font-family: helvetica;
+    text-decoration: none;
+    top: 250px;
+    text-shadow: 1px 1px 1px black;
+  }
+  div.tooltip::before {
+    content: attr(data-tip);
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    background: #00a4e4;
+    color: #e0e0e0;
+    padding: 3px;
+    line-height: 24px;
+    height: 24px;
+    left: auto;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+    }
+    
+    div.tooltip:hover::before {
+    opacity: 1;
+    /* bottom: -35px; */
+    }
+    @media only screen and (max-width: 600px) {
+        div.tooltip::before{
+            font-size: 9px;
+        }
+    }
 label{
     font-style: normal;
     font-size: x-large;
